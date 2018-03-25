@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Trell klon: Drömhuset</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link href="js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="background--house">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <header class="header">
+            <nav class="navbar">
+                <h1>Board: Drömhuset</h1>
+                <div id="visibility-menu">
+                    <select class="form-control">
+                        <option>Private</option>
+                        <option>Group</option>
+                        <option selected="selected">Public</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+
+        <div class="snap">
+            <div class="lane-container">
+                <div id="lane-backlog" class="lane">
+                    <div class="lane-wrapper">
+                        <h6>Backlog</h6>
+                        <ul id="sortable1" class="connectedSortable list-group ">
+                          <li class="list-group-item card">Ta in offert på garageasfaltering</li>
+                          <li class="list-group-item card">Installera vindflöjel</li>
+                          <li class="list-group-item card">Förvarna granner</li>
+                          <li class="list-group-item card">Bes tapetprover</li>
+                          <li class="list-group-item card">Kratta uppgång</li>
+                          <li class="list-group-item card">Byt brevlåda</li>
+                          <li class="list-group-item card">Polera trädgårdstomten</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="lane-progress" class="lane">
+                    <div class="lane-wrapper">
+                        <h6>In progress</h6>
+                        <ul class="connectedSortable list-group">
+                            <li class="list-group-item card">Ring arkitekt</li>
+                            <li class="list-group-item card">Bygg hundkoja</li>
+                            <li class="list-group-item card">Måla poolhus</li>
+                            <li class="list-group-item card">Klipp buskar</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="lane-done" class="lane">
+                    <div class="lane-wrapper">
+                        <h6>Done</h6>
+                        <ul class="connectedSortable list-group">
+                            <li class="list-group-item card">Skaffa försäkring</li>
+                            <li class="list-group-item card">Ansluta vatten/avlopp</li>
+                            <li class="list-group-item card">Bet vägavgift</li>
+                            <li class="list-group-item card">Elabonnemang</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="lane-archived" class="lane">
+                    <div class="lane-wrapper">
+                        <h6>Archived</h6>
+                        <ul class="connectedSortable list-group">
+                            <li class="list-group-item card">Ring mäklare</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <div id="dialog" class="dialog" title="Trello card">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Overview</a></li>
+                    <li><a href="#tabs-2">Settings</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p class="dialog-text"></p>
+                </div>
+                <div id="tabs-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Due date:</span>
+                    </div>
+                    <input id="datepicker" type="text" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+        <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

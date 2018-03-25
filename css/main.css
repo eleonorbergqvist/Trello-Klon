@@ -1,0 +1,42 @@
+.background--house {
+    background-image: url(../img/marjorie-teo-389755-unsplash.jpg);
+    background-size: cover;
+}
+
+.header {
+    height: 70px;
+    background: transparent;
+}
+
+.lane-container {
+    z-index: 0;
+}
+
+.lane {
+    margin-right: 10px;
+    width: 260px;
+    z-index: 1;
+    position: absolute;
+    padding: 10px;
+    background: #E1E3E5;
+    border-radius: 5px;
+}
+
+.list-group {
+    min-height: 50px;
+}
+
+.card {
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.snap {
+    width: 100%;
+    height: calc(100% - 70px);
+    position: absolute;
+}
+
+.dialog {
+    width: 400px;
+}
